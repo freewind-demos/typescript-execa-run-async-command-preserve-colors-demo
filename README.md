@@ -1,18 +1,13 @@
-TypeScript Hello World Demo
+TypeScript Child Process Run Async Command Preserve Colors Demo
 ===========================
+
+使用child_process调用命令，同时保持输出的颜色
+
+直接使用`{stdio: 'inherit'}`作为`child_process`的options即可
 
 ```
 npm install
 npm run demo
 ```
 
-Note:
-
-`esModuleInterop` is recommended to set to `true`,
-since we can have consistent importing syntax with babel,
-always use:
-
-```
-import some from 'some'
-```
-
+![demo](./images/demo.png)
