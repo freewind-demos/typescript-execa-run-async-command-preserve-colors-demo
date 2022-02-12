@@ -1,6 +1,6 @@
-import childProcess from 'child_process';
+import {execa} from 'execa';
 
 const cmd = 'http GET https://httpbin.org/get';
-const [command, ...args] = cmd.split(' ');
-childProcess.spawn(command, args, {stdio: 'inherit'});
+
+execa(cmd, {stdio: 'inherit', shell: true});
 
